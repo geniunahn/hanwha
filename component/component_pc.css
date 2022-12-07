@@ -18,15 +18,15 @@ body {
 
 .header {
   padding: 0 8.333333%;
-  position: fixed;
   top: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 145px;
-  position: relative;
+  position: fixed;
   z-index: 99;
+  transition: 0.3s ease-in-out;
 }
 
 /* 로고입니다 */
@@ -50,6 +50,7 @@ body {
 .nav a {
   color: #fff;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .depth_1 {
@@ -69,7 +70,7 @@ body {
   padding: 0px 15.625%;
   max-height: 0px;
   overflow: hidden;
-  transition: 1s;
+  transition: 0.3s ease-in-out;
 }
 
 .depth_1 > li:hover .depth_2_box {
@@ -112,11 +113,22 @@ body {
   color: #fff;
 }
 
+.utile_left {
+  margin-right: 20px;
+  display: flex;
+}
+
+.site_map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .utile_left a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 31px;
+  margin-right: 20px;
 }
 
 .utile_left p {
@@ -128,11 +140,158 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 1px solid #fff;
+  border: 1px solid #fff;
   width: 210px;
   height: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+/* 호버 상황의 이벤트입니다. */
+
+.header:hover {
+  background-color: #fff;
+}
+
+.header:hover nav > ul > li > a {
+  color: #000;
+}
+
+.header:hover .utile_left a {
+  color: #000;
+}
+
+.header:hover .utile_left a img {
+  content: url(../main/images/language_active.svg);
+}
+
+.header:hover .utile_left .site_map img {
+  content: url(../main/images/site_map.active.svg);
+}
+
+.header:hover .utile_right a {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.header:hover .logo img {
+  content: url(../main/images/header_logo_active.png);
+}
+
+#utile_right_a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* 스크롤 액티브 상황의 이벤트입니다. */
+
+.header.active {
+  background-color: #fff;
+  height: 80px;
+}
+
+.header.active nav > ul > li > a {
+  color: #000;
+}
+
+.header.active .utile_left a {
+  color: #000;
+}
+
+.header.active .utile_left a img {
+  content: url(../main/images/language_active.svg);
+}
+
+.header.active .utile_left .site_map img {
+  content: url(../main/images/site_map.active.svg);
+}
+
+.header.active .utile_right a {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.header.active .logo img {
+  content: url(../main/images/header_logo_active.png);
+}
+
+#utile_right_a.active {
+  color: #fff;
+  background-color: #000;
 }
 
 /* pc의 사이트맵입니다 */
 
 /* pc의 푸터입니다 */
+
+.footer {
+  margin-top: 250px;
+  border-top: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 8.333333%;
+}
+
+.footer_left {
+  display: flex;
+}
+
+.footer_left_logo {
+  width: 209px;
+  height: 60px;
+  margin-right: 40px;
+}
+
+.footer_left_logo img {
+  width: 100%;
+}
+
+.footer_left_info p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.footer_left_info p span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #444;
+}
+
+.footer_right_upper {
+  display: flex;
+}
+
+.footer_right_upper span {
+  color: #444;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.footer_right_upper a {
+  color: #444;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.footer_right_under {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer_right_under a {
+  margin: 55px 0 0 20px;
+}
+
+.footer_right_upper_2 {
+  margin: 0 20px 0 40px;
+}

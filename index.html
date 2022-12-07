@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./component/component.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -138,9 +140,12 @@
               <p>EN</p>
               <img src="./main/images/language.svg" alt="header_language" />
             </a>
+            <div class="site_map">
+              <img src="./main/images/site_map.svg" alt="site_map" />
+            </div>
           </div>
           <div class="utile_right">
-            <a href="#">RESERVATION</a>
+            <a href="#" id="utile_right_a">RESERVATION</a>
           </div>
         </div>
       </header>
@@ -155,43 +160,293 @@
       <div class="width_1600">
         <div class="about_box">
           <div class="about_title">
-            <h1></h1>
-            <h2></h2>
-            <h3></h3>
+            <h1>
+              우리는 당신의 새로운 추억을 위한 호텔&리조트를 준비하고 있습니다
+            </h1>
+            <h2>ABOUT US</h2>
+            <h3>
+              한화호텔&리조트는 품격있는 서비스와 지속적으로 리뉴얼되는 시설로
+              당신에게 특별한 시간을 드립니다
+            </h3>
           </div>
           <div class="about_bn"></div>
-          <div class="about_btn"></div>
+          <div class="about_btn">
+            <a href="#">
+              <p>VIEW MORE</p>
+              <svg
+                width="8"
+                height="13"
+                viewBox="0 0 8 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1 0.5L7 6.5L1 12.5" stroke="black" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
       <!-- 거제입니다 -->
       <div class="width_1600">
         <div class="geoje_box">
           <div class="geoje_title">
-            <h1></h1>
-            <h2></h2>
-            <h3></h3>
+            <h1>당신이 특별해지는 시간</h1>
+            <h2>GEOJE BELVEDERE</h2>
+            <h3>
+              머무는 것 자체로 여행과 쉼이 완성되는 아름다운 자연과 레저 시설을
+              갖춘 거제 벨버디어입니다
+            </h3>
           </div>
           <div class="geoje_products">
             <ul>
+              <!-- 라인1 입니다 -->
               <li class="geoje_products_line_1">
-                <ul>
-                  <li class="geoje_products_line_1_product"></li>
-                  <li class="geoje_products_line_1_product"></li>
-                  <li class="geoje_products_line_1_product"></li>
-                </ul>
+                <div class="geoje_products_line_1_product">
+                  <div class="geoje_products_line_1_product_box">
+                    <div class="geoje_products_line_1_product_img">
+                      <img src="./main/images/rooms.jpg" alt="rooms" />
+                    </div>
+                    <div class="geoje_products_line_1_product_text">
+                      <h1>ROOMS</h1>
+                      <h2>객실</h2>
+                      <div class="geoje_products_line_1_product_text_under">
+                        <h4>
+                          5개 타입의 객실에서 조용하고 안락한 시간을 누리세요.
+                        </h4>
+                        <a
+                          href="#"
+                          class="geoje_products_line_1_product_text_under_btn"
+                          ><p>VIEW MORE</p>
+                          <svg
+                            width="7"
+                            height="11"
+                            viewBox="0 0 7 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="geoje_products_line_1_product_box">
+                    <div class="geoje_products_line_1_product_img">
+                      <img src="./main/images/spa.jpg" alt="rooms" />
+                    </div>
+                    <div class="geoje_products_line_1_product_text">
+                      <h1>SPA</h1>
+                      <h2>스파</h2>
+                      <div class="geoje_products_line_1_product_text_under">
+                        <h4>
+                          5개 타입의 스파로 편안하고 특별한 추억을 만드세요.
+                        </h4>
+                        <a
+                          href="#"
+                          class="geoje_products_line_1_product_text_under_btn"
+                          ><p>VIEW MORE</p>
+                          <svg
+                            width="7"
+                            height="11"
+                            viewBox="0 0 7 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="geoje_products_line_1_product_box">
+                    <div class="geoje_products_line_1_product_img">
+                      <img src="./main/images/dining.jpg" alt="rooms" />
+                    </div>
+                    <div class="geoje_products_line_1_product_text">
+                      <h1>DINING</h1>
+                      <h2>다이닝</h2>
+                      <div class="geoje_products_line_1_product_text_under">
+                        <h4>
+                          깨끗하고 아름다운 자연경관 속에서 신선하고 다양한
+                          요리를 즐기세요.
+                        </h4>
+                        <a
+                          href="#"
+                          class="geoje_products_line_1_product_text_under_btn"
+                          ><p>VIEW MORE</p>
+                          <svg
+                            width="7"
+                            height="11"
+                            viewBox="0 0 7 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
+
+              <!-- 라인2 입니다 -->
               <li class="geoje_products_line_2">
-                <ul>
-                  <li class="geoje_products_line_2_product"></li>
-                  <li class="geoje_products_line_2_product"></li>
-                </ul>
+                <div class="geoje_products_line_1_product">
+                  <div class="geoje_products_line_1_product_box">
+                    <div class="geoje_products_line_1_product_img">
+                      <img src="./main/images/PILATES.jpg" alt="rooms" />
+                    </div>
+                    <div class="geoje_products_line_1_product_text">
+                      <h1>PILATES</h1>
+                      <h2>필라테스</h2>
+                      <div class="geoje_products_line_1_product_text_under">
+                        <h4>
+                          검증된 필라테스 강사진과 함께 건강하고 아름다운 시간을
+                          보내세요.
+                        </h4>
+                        <a
+                          href="#"
+                          class="geoje_products_line_1_product_text_under_btn"
+                          ><p>VIEW MORE</p>
+                          <svg
+                            width="7"
+                            height="11"
+                            viewBox="0 0 7 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="geoje_products_line_2_product_box">
+                    <div class="geoje_products_line_1_product_img">
+                      <img src="./main/images/GOLF.jpg" alt="rooms" />
+                    </div>
+                    <div class="geoje_products_line_1_product_text">
+                      <h1>GOLF</h1>
+                      <h2>골프</h2>
+                      <div class="geoje_products_line_1_product_text_under">
+                        <h4>
+                          2022년 여름을 맞아 리뉴얼한 코스를 준비했습니다. 맑은
+                          공기와 싱그러운 자연속에서 라운딩을 즐기세요.
+                        </h4>
+                        <a
+                          href="#"
+                          class="geoje_products_line_1_product_text_under_btn"
+                          ><p>VIEW MORE</p>
+                          <svg
+                            width="7"
+                            height="11"
+                            viewBox="0 0 7 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
+              <!-- 라인3 입니다. -->
               <li class="geoje_products_line_3">
-                <ul>
-                  <li class="geoje_products_line_3_product"></li>
-                  <li class="geoje_products_line_3_product"></li>
-                  <li class="geoje_products_line_3_product"></li>
-                </ul>
+                <div class="geoje_products_line_1_product">
+                  <div class="geoje_products_line_1_product_box">
+                    <div class="geoje_products_line_1_product_img">
+                      <img src="./main/images/FARM_TOUR.jpg" alt="rooms" />
+                    </div>
+                    <div class="geoje_products_line_1_product_text">
+                      <h1>FARM TOUR</h1>
+                      <h2>농장체험</h2>
+                      <div class="geoje_products_line_1_product_text_under">
+                        <h4>
+                          귀엽고 아름다운 동물들에게 먹이를 주고 교감을 나누는
+                          추억을 만드세요.
+                        </h4>
+                        <a
+                          href="#"
+                          class="geoje_products_line_1_product_text_under_btn"
+                          ><p>VIEW MORE</p>
+                          <svg
+                            width="7"
+                            height="11"
+                            viewBox="0 0 7 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="geoje_products_line_1_product_box">
+                    <div class="geoje_products_line_1_product_img">
+                      <img
+                        src="./main/images/CHILDREN’S_PLAYGROUND.jpg"
+                        alt="rooms"
+                      />
+                    </div>
+                    <div class="geoje_products_line_1_product_text">
+                      <h1>CHILDREN’S PLAYGROUND</h1>
+                      <h2>어린이놀이터</h2>
+                      <div class="geoje_products_line_1_product_text_under">
+                        <h4>
+                          안전하고 깨끗한 어린이 놀이터에서 자녀분들이 마음껏
+                          뛰어놀게 해주세요.
+                        </h4>
+                        <a
+                          href="#"
+                          class="geoje_products_line_1_product_text_under_btn"
+                          ><p>VIEW MORE</p>
+                          <svg
+                            width="7"
+                            height="11"
+                            viewBox="0 0 7 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="geoje_products_line_1_product_box">
+                    <div class="geoje_products_line_1_product_img">
+                      <img src="./main/images/ARBORETUM.jpg" alt="rooms" />
+                    </div>
+                    <div class="geoje_products_line_1_product_text">
+                      <h1>ARBORETUM</h1>
+                      <h2>수목원</h2>
+                      <div class="geoje_products_line_1_product_text_under">
+                        <h4>
+                          천혜의 자연속에서 관리되고 있는 다양한 꽃과 수목길
+                          사이를 걸어보세요.
+                        </h4>
+                        <a
+                          href="#"
+                          class="geoje_products_line_1_product_text_under_btn"
+                          ><p>VIEW MORE</p>
+                          <svg
+                            width="7"
+                            height="11"
+                            viewBox="0 0 7 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -201,32 +456,164 @@
       <div class="width_1600">
         <div class="contact_box">
           <div class="contact_title">
-            <h1></h1>
-            <h2></h2>
-            <h3></h3>
+            <h1>당신의 방문을 기다리고 있습니다</h1>
+            <h2>CONTACT US</h2>
+            <h3>
+              친절하고 정확한 상담으로 고객님의 이용에 불편함이 없도록
+              하겠습니다
+            </h3>
           </div>
-          <div class="contact_map"></div>
+          <div class="contact_map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.953625465107!2d128.70894241524047!3d35.007865980356826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35692a724a7dbc95%3A0xef1677fa42d57417!2z7ZWc7ZmU66as7KGw7Yq4IOqxsOygnCDrsqjrsoTrlJTslrQ!5e0!3m2!1sko!2skr!4v1670394364171!5m2!1sko!2skr"
+              width="100%"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
           <div class="contact_info">
             <div class="contact_address">
-              <div class="contact_address_left"></div>
-              <div class="contact_address_right"></div>
+              <div class="contact_address_left">
+                <h1>주소</h1>
+              </div>
+              <div class="contact_address_right">
+                <p>경남 거제시 장목면 거제북로 2501-40</p>
+              </div>
             </div>
             <div class="contact_way">
               <ul>
-                <li class="contact_way_box"></li>
-                <li class="contact_way_box"></li>
-                <li class="contact_way_box"></li>
+                <li class="contact_way_box">
+                  <h1>Mail</h1>
+                  <p>geojebelvedere@naver.com</p>
+                </li>
+                <li class="contact_way_box">
+                  <h1>Tell</h1>
+                  <p>1670-9977</p>
+                </li>
+                <li class="contact_way_box">
+                  <h1>Fax</h1>
+                  <p>Fax 02-789-5525</p>
+                </li>
               </ul>
             </div>
             <div class="contact_traffic">
-              <div class="contact_traffic_left"></div>
-              <div class="contact_traffic_right"></div>
+              <div class="contact_traffic_left">
+                <h1>대중교통 이동시</h1>
+              </div>
+              <div class="contact_traffic_right">
+                <ul>
+                  <li>
+                    <p>지하철</p>
+                    <svg
+                      width="16"
+                      height="10"
+                      viewBox="0 0 16 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.2625 0.737305L8 6.4623L13.7375 0.737305L15.5 2.4998L8 9.9998L0.5 2.4998L2.2625 0.737305Z"
+                        fill="#444444"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <p>버스</p>
+                    <svg
+                      width="16"
+                      height="10"
+                      viewBox="0 0 16 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.2625 0.737305L8 6.4623L13.7375 0.737305L15.5 2.4998L8 9.9998L0.5 2.4998L2.2625 0.737305Z"
+                        fill="#444444"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <p>철도</p>
+                    <svg
+                      width="16"
+                      height="10"
+                      viewBox="0 0 16 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.2625 0.737305L8 6.4623L13.7375 0.737305L15.5 2.4998L8 9.9998L0.5 2.4998L2.2625 0.737305Z"
+                        fill="#444444"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- 푸터입니다 -->
-      <footer class="footer"></footer>
+
+      <footer class="footer">
+        <div class="footer_left">
+          <h1 class="footer_left_logo">
+            <img src="./main/images/footer_logo.jpg" alt="footer_logo" />
+          </h1>
+          <div class="footer_left_info">
+            <p class="footer_left_info_1">
+              경남 거제시 장목면 거제북로 2501-40
+            </p>
+            <p class="footer_left_info_2">
+              <span>Tel.1670-9977</span>
+              <span>Fax 02-789-5525</span>
+            </p>
+            <p class="footer_left_info_3">
+              Copyrightⓒ2021더테이스터블 주식회사.All rights Reserved
+            </p>
+            <p class="footer_left_info_4">
+              <span>사업자번호:189-87-02127</span>
+              <span>대표이사:박원석</span>
+              <span>통신판매업신고번호2021-서울영등포-2355</span>
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="footer_right_upper">
+            <span class="footer_right_upper_1">개인정보처리방침</span>
+            <span class="footer_right_upper_2">이메일 무단 수집거부</span>
+            <a href="#">
+              <span>패밀리사이트</span>
+              <svg
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1 1L7 7L13 1" stroke="#444444" />
+              </svg>
+            </a>
+          </div>
+          <div class="footer_right_under">
+            <a href="#"
+              ><img src="./main/images/instagram.svg" alt="instagram"
+            /></a>
+            <a href="#"
+              ><img src="./main/images/youtube.svg" alt="youtube"
+            /></a>
+            <a href="#"
+              ><img src="./main/images/facebook.svg" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="./main/images/twitter.svg" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
