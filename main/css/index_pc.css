@@ -51,13 +51,23 @@
 
 .about_btn a {
   border: 1px solid #000;
-  width: 156px;
-  height: 47px;
+  width: 200px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 70px 0 200px;
   color: #000;
+  transition: 0.3s;
+}
+
+.about_btn a:hover {
+  color: #fff;
+  background: #000;
+}
+
+.about_btn a:hover path {
+  stroke: white;
 }
 
 .about_btn p {
