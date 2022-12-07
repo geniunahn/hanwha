@@ -11,6 +11,7 @@
 - rooms 서브 페이지 완성
 - spa 서브 페이지 완성
 - dining 서브 페이지 완성
+- facilities 서브 페이지 
 
 # to do list
 - 빵 부스러기 구현하기
