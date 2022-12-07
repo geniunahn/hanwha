@@ -1,0 +1,138 @@
+/* pc의 기본 설정입니다. */
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+:root {
+  --main: #f37321;
+  --bgc: #f7f7f7;
+}
+
+.width_1600 {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* pc의 헤더입니다 */
+
+.header {
+  padding: 0 8.333333%;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 145px;
+  position: relative;
+  z-index: 99;
+}
+
+/* 로고입니다 */
+
+.logo a {
+  width: 210px;
+  height: 60px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 네비입니다 */
+
+.nav {
+  transition: background 1s;
+}
+
+.nav a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.depth_1 {
+  display: flex;
+}
+
+.depth_1 li {
+  margin: 0 42.5px;
+}
+
+.depth_2_box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px 15.625%;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.depth_1 > li:hover .depth_2_box {
+  max-height: 200px;
+}
+
+.depth_2 {
+  flex: 1;
+}
+
+.depth_2_overview {
+  margin: 40px 0 30px;
+}
+
+.depth_2_overview a {
+  color: #000;
+}
+
+.depth_2_under_box {
+  display: flex;
+}
+
+.depth_2_under_box a {
+  font-size: 15px;
+  color: #999;
+}
+
+.depth2_under {
+  margin-bottom: 40px;
+}
+
+/* 유틸입니다 */
+
+.utile {
+  display: flex;
+  align-items: center;
+}
+
+.utile a {
+  color: #fff;
+}
+
+.utile_left a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 31px;
+}
+
+.utile_left p {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.utile_right a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid #fff;
+  width: 210px;
+  height: 60px;
+}
+
+/* pc의 사이트맵입니다 */
+
+/* pc의 푸터입니다 */
