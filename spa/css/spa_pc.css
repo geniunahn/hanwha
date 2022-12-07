@@ -1,7 +1,7 @@
-/* 룸 배너 입니다 */
+/* 스파 배너 입니다 */
 
-.rooms_bn_box {
-  background-image: url(../images/rooms_bn.jpg);
+.spa_bn_box {
+  background-image: url(../images/spa_bn.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -12,7 +12,7 @@
   justify-content: center;
 }
 
-.rooms_bn_title h1 {
+.spa_bn_title h1 {
   font-size: 80px;
   font-weight: 500;
   color: #fff;
