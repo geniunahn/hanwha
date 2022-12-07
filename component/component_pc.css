@@ -307,7 +307,7 @@ body {
 /* pc의 푸터입니다 */
 
 .footer {
-  margin-top: 250px;
+  margin-top: 300px;
   border-top: 1px solid #e1e1e1;
   display: flex;
   justify-content: space-between;
