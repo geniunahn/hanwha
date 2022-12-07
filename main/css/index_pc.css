@@ -6,8 +6,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  position: absolute;
-  top: 0;
 }
 
 .main_bn_title {
@@ -24,7 +22,6 @@
 .main_bn_title h1 {
   font-size: 80px;
   font-weight: 700;
-  /* line-height: 7rem; */
   color: #fff;
 }
 
@@ -37,7 +34,7 @@
 
 /* 어바웃입니다 */
 .about_title {
-  margin: 1280px 0 70px;
+  margin: 200px 0 70px;
   text-align: center;
 }
 
@@ -166,14 +163,14 @@
   font-size: 16px;
   font-weight: 400;
   color: #444;
-  flex: 1;
+  flex: 3;
 }
 
 .geoje_products_line_1_product_text_under_btn {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex: 1;
+  flex: 2;
 }
 
 .geoje_products_line_1_product_text_under_btn p {
