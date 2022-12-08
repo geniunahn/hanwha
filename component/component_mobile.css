@@ -255,6 +255,7 @@ body {
 .site_map_dep2_li > a {
   font-size: 23px;
   color: #444;
+  display: inline;
 }
 
 .site_map_dep1_li:hover > ul {
