@@ -31,6 +31,7 @@
 - 메인 페이지 모바일 완성
 - rooms, spa, dining, facilities 모바일 완성
 - about 모바일 완성
+- 맞춤법, 어색한 문장 수정
 # TO DO LIST
 - event 섹션에게 버튼 슬라이드 이벤트 만들기
 - 오시는 길 교통편 드롭다운 메뉴 만들기
