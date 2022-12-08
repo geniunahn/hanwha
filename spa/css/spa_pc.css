@@ -203,6 +203,11 @@
   align-items: center;
   justify-content: center;
   border: 1px solid #000;
+  transition: 0.3s;
+}
+
+.event_product_info_btn a:hover {
+  background-color: #000;
 }
 
 .event_product_info_btn P {
@@ -210,6 +215,19 @@
   font-weight: 400;
   color: #000;
   margin: 0 14px 0 0;
+  transition: 0.3s;
+}
+
+.event_product_info_btn a:hover p {
+  color: #fff;
+}
+
+.event_product_info_btn path {
+  transition: 0.3s;
+}
+
+.event_product_info_btn a:hover path {
+  stroke: white;
 }
 
 .event_product_bn {

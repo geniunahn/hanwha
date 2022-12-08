@@ -7,8 +7,8 @@ $(function () {
     "main/images/main_bn_3.jpg",
   ];
 
-  let bnTitle_1 = ["ONLY", "HEALING", "BEAUTIFUL"];
-  let bnTitle_2 = ["ENJOY IT", "YOUR LIFE", "AND PEACEFUL TIME"];
+  let bnTitle_1 = ["ONLY", "HEALING", "PERFECTLY"];
+  let bnTitle_2 = ["ENJOY IT", "YOUR LIFE", "PEACEFUL TIME"];
   let bnTitle_3 = [
     "가족과 함께 감동으로 가득한 추억을 만드세요",
     "지친 당신에게 재충전의 시간을 선물하세요",

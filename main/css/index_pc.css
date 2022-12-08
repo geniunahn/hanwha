@@ -87,6 +87,10 @@
   background: #000;
 }
 
+.about_btn path {
+  transition: 0.3s;
+}
+
 .about_btn a:hover path {
   stroke: white;
 }
