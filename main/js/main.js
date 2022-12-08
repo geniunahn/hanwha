@@ -37,3 +37,12 @@ $(function () {
     $(".main_bn_title p").html(bnTitle_3[bg_img_num]);
   }, 6000);
 });
+
+// 대중교통 이동시 이벤트 입니다
+
+$(function () {
+  $(".contact_traffic_right li").on("click", function () {
+    $(this).find("div").toggleClass("active");
+    $(this).find("svg").toggleClass("active");
+  });
+});

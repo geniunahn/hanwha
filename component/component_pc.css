@@ -460,3 +460,8 @@ body {
 .footer_right_upper_2 {
   margin: 0 20px 0 40px;
 }
+
+.footer_right_upper_1,
+.footer_right_upper_2 {
+  cursor: pointer;
+}

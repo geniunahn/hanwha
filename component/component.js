@@ -30,8 +30,4 @@ $(function () {
   $(".sub_menu_option").on("click", function () {
     $(this).find("ul").toggleClass("active");
   });
-
-  // $(".sub_menu_option").on("mouseout", function () {
-  //   $(".sub_menu_option_depth").removeClass("active");
-  // });
 });
