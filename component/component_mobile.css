@@ -193,7 +193,7 @@ body {
 
 .site_map_dep1_li {
   margin-top: 30px;
-  border-bottom: 1px solid #666;
+  /* border-bottom: 1px solid #666; */
   position: relative;
 }
 
@@ -201,6 +201,12 @@ body {
   font-size: 28px;
   color: #000;
   font-weight: 500;
+  display: inline;
+  transition: 0.5s;
+}
+
+.site_map_dep1_li > a.active {
+  color: #ccc;
 }
 
 .site_map_dep1_li::after {
@@ -210,6 +216,7 @@ body {
   background: var(--main);
   position: absolute;
   top: 40px;
+  left: 0;
   transition: 0.5s;
 }
 
@@ -237,12 +244,12 @@ body {
 .site_map_dep2_ul {
   max-height: 0;
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 10px;
   transition: 1s;
 }
 
 .site_map_dep2_li {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .site_map_dep2_li > a {
@@ -251,7 +258,7 @@ body {
 }
 
 .site_map_dep1_li:hover > ul {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 /* 모바일의 서브 메뉴입니다 */

@@ -284,10 +284,12 @@ body {
   flex: 1;
   position: relative;
 }
-/* 폰트 수정, 색상 변경 */
+
 .site_map_dep1_li > a {
   font-size: 30px;
+  font-size: 400;
   color: #000;
+  transition: 0.5s;
 }
 
 .site_map_dep2_ul {
@@ -298,10 +300,20 @@ body {
   line-height: 2rem;
   margin-top: 20px;
 }
-/* 폰트 수정, 색상 변경 */
+
 .site_map_dep2_li > a {
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: 400;
   color: #444;
+  transition: 0.5s;
+}
+
+.site_map_dep1_li > a.active {
+  color: #ccc;
+}
+
+.site_map_dep2_li > a.active {
+  color: #ccc;
 }
 
 /* 서브 메뉴입니다 */

@@ -325,14 +325,14 @@
 }
 
 .contact_traffic_description.active {
-  max-height: 400px;
+  max-height: 600px;
 }
 
 .contact_traffic_description p {
   font-size: 16px;
   font-weight: 400;
   color: var(--main);
-  padding: 70px 50px;
+  padding: 50px 50px;
   line-height: 1.8rem;
 }
 

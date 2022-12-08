@@ -24,6 +24,19 @@ $(function () {
   });
 });
 
+// 사이트맵 호버 이벤트입니다. 모바일에서만 적용 됩니다.
+
+$(function () {
+  $(".site_map_dep1_li").on("mouseover", function () {
+    $(".site_map_dep1_li a").addClass("active");
+    $(this).find("a").removeClass("active");
+  });
+
+  $(".site_map_dep1_li").on("mouseout", function () {
+    $(".site_map_dep1_li a").removeClass("active");
+  });
+});
+
 // 서브 메뉴 버튼 입니다.
 
 $(function () {
