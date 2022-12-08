@@ -1,0 +1,250 @@
+/* 모바일 룸 배너 입니다 */
+
+.rooms_bn_box {
+  background-image: url(../images/rooms_bn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rooms_bn_title h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* 모바일 오버뷰 입니다 */
+
+.overview_title {
+  margin: 100px 0 50px;
+  text-align: center;
+}
+
+.overview_title h1 {
+  color: var(--main);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.overview_title h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 7px 0 15px;
+}
+
+.overview_title h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.overview_bn img {
+  width: 100%;
+  height: 280px;
+  margin-bottom: 100px;
+  object-fit: cover;
+}
+
+/* 모바일 객실 설명입니다 */
+
+.overview_product_box,
+.overview_product_box_2 {
+  margin: 0 0 50px 0;
+}
+
+.overview_product_text {
+  border-bottom: 1px solid #dddddd;
+  padding: 0 0 20px 0;
+  margin: 0 0 20px 0;
+}
+
+.overview_product_img img {
+  width: 100%;
+}
+
+.overview_product_text h1 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #666a74;
+  margin: 10px 0 5px;
+}
+
+.overview_product_text h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 7px 0;
+}
+
+.overview_product_text_under {
+  display: flex;
+  align-items: flex-end;
+}
+
+.overview_product_text_under h4 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #444;
+  flex: 2;
+}
+
+.overview_product_text_under_btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.overview_product_text_under_btn p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #666a74;
+  margin-right: 8px;
+}
+
+.overview_product_text_second_line {
+  display: flex;
+  margin: 0 0 10px 0;
+}
+
+.overview_product_text_second_line_text {
+  flex: 1;
+  display: flex;
+}
+
+.overview_product_text_second_line_text h1 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 30px 0 0;
+}
+
+.overview_product_text_second_line_text p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #666a74;
+}
+
+/* 모바일 이벤트 입니다 */
+
+.event_wrap {
+  padding: 50px 0;
+  background-color: var(--bgc);
+  margin: 50px 0 0 0;
+}
+
+.event_title {
+  text-align: center;
+}
+
+.event_title h1 {
+  color: var(--main);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.event_title h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 7px 0 50px;
+}
+
+.event_product {
+  display: flex;
+  flex-direction: column;
+  /* gap: 30px; */
+  position: relative;
+}
+
+.event_product_info_text h1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+}
+.event_product_info_text h2 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #444;
+  margin: 10px 0 30px 0;
+}
+.event_product_info_text h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #444;
+  margin: 0 0 15px 0;
+}
+.event_product_info_text h4 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #444;
+}
+
+.event_product_info {
+  display: flex;
+  order: 10;
+  flex-direction: column;
+  justify-content: space-between;
+  /* width: 32.0625%; */
+}
+
+.event_product_info_btn a {
+  width: 160px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  transition: 0.3s;
+  margin: 50px 0 0 0;
+}
+
+.event_product_info_btn a:hover {
+  background-color: #000;
+}
+
+.event_product_info_btn P {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 14px 0 0;
+  transition: 0.3s;
+}
+
+.event_product_info_btn a:hover p {
+  color: #fff;
+}
+
+.event_product_info_btn path {
+  transition: 0.3s;
+}
+
+.event_product_info_btn a:hover path {
+  stroke: white;
+}
+
+.event_product_bn {
+  /* width: 66.0625%; */
+}
+
+.event_product_bn img {
+  width: 100%;
+}
+
+.event_arrow_left {
+  position: absolute;
+  right: calc(100% + 50px);
+  top: calc(50% - 51px);
+  cursor: pointer;
+  display: none;
+}
+.event_arrow_right {
+  position: absolute;
+  left: calc(100% + 50px);
+  top: calc(50% - 51px);
+  cursor: pointer;
+  display: none;
+}

@@ -15,7 +15,6 @@
   align-items: center;
   text-align: center;
   height: 320px;
-  margin: 20px 0 0 0;
 }
 
 .main_bn_title h3 {
@@ -122,7 +121,7 @@
 .geoje_title h2 {
   font-size: 40px;
   font-weight: 400;
-  margin: 7px 0 28px;
+  margin: 7px 0 15px;
 }
 
 .geoje_title h3 {
@@ -204,7 +203,7 @@
 .contact_title h2 {
   font-size: 40px;
   font-weight: 400;
-  margin: 7px 0 28px;
+  margin: 7px 0 15px;
 }
 
 .contact_title h3 {

@@ -256,7 +256,7 @@ body {
 
 /* 모바일의 서브 메뉴입니다 */
 .sub_menu_box {
-  display: flex;
+  display: none;
   align-items: center;
   margin: 30px 0 0 0;
 }
