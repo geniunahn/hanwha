@@ -25,19 +25,6 @@ $(function () {
   });
 });
 
-// nav 호버 이벤트입니다. pc에서만 적용 됩니다.
-
-// $(function () {
-//   $(".nav > ul > li > a").on("mouseover", function () {
-//     $(".nav > ul > li > a").addClass("active");
-//     $(this).find("a").removeClass("active");
-//   });
-
-//   $(".depth_1 li").on("mouseout", function () {
-//     $(".depth_1 li a").removeClass("active");
-//   });
-// });
-
 // 사이트맵 호버 이벤트입니다. 모바일에서만 적용 됩니다.
 
 $(function () {
@@ -56,5 +43,13 @@ $(function () {
 $(function () {
   $(".sub_menu_option").on("click", function () {
     $(this).find("ul").toggleClass("active");
+  });
+});
+
+// footer 의 패밀리 사이트 이벤트입니다.
+
+$(function () {
+  $(".footer_right_upper_family").on("click", function () {
+    $(".family_depth1").toggleClass("active");
   });
 });
