@@ -29,6 +29,14 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.header a {
+  transition: 0.4s;
+}
+
+.header a:hover {
+  color: var(--main);
+}
+
 /* 로고입니다 */
 
 .logo a {
@@ -122,6 +130,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .utile_left a {
@@ -156,6 +165,10 @@ body {
 
 .header:hover nav > ul > li > a {
   color: #000;
+}
+
+.header:hover nav > ul > li > a:hover {
+  color: var(--main);
 }
 
 .header:hover .utile_left a {
@@ -227,8 +240,40 @@ body {
   display: none;
 }
 
+.site_map a {
+  transition: 0.4s;
+}
+
+.site_map a:hover {
+  color: var(--main);
+}
+
+.site_map_close {
+  display: block;
+  animation: close_move 1s forwards;
+}
+
+@keyframes close_move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
 .site_map_open {
   display: block;
+  animation: open_move 1s forwards;
+}
+
+@keyframes open_move {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .site_map_close_btn {
@@ -353,6 +398,10 @@ body {
   color: #aaa;
 }
 
+.sub_menu_option a:hover {
+  color: var(--main);
+}
+
 .sub_menu_option:after {
   content: "";
   width: 1px;
@@ -416,6 +465,10 @@ body {
   padding: 70px 8.333333%;
 }
 
+.footer a {
+  color: #444;
+}
+
 .footer_left {
   display: flex;
 }
@@ -453,7 +506,7 @@ body {
   font-weight: 400;
 }
 
-.footer_right_upper a {
+.footer_right_upper_family {
   color: #444;
   width: 200px;
   height: 40px;

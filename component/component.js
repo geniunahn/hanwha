@@ -21,8 +21,22 @@ $(function () {
 
   $(".site_map_close_btn img").on("click", function () {
     $(".site_map").removeClass("site_map_open");
+    $(".site_map").addClass("site_map_close");
   });
 });
+
+// nav 호버 이벤트입니다. pc에서만 적용 됩니다.
+
+// $(function () {
+//   $(".nav > ul > li > a").on("mouseover", function () {
+//     $(".nav > ul > li > a").addClass("active");
+//     $(this).find("a").removeClass("active");
+//   });
+
+//   $(".depth_1 li").on("mouseout", function () {
+//     $(".depth_1 li a").removeClass("active");
+//   });
+// });
 
 // 사이트맵 호버 이벤트입니다. 모바일에서만 적용 됩니다.
 
