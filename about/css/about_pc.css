@@ -1,5 +1,11 @@
 /* 어바웃 배너 입니다 */
 
+.about_bn_box_wrap {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
 .about_bn_box {
   background-image: url(../images/about_bn.jpg);
   background-repeat: no-repeat;
@@ -10,6 +16,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: bn_opening 2s forwards;
+}
+
+@keyframes bn_opening {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .about_bn_title h1 {

@@ -231,8 +231,14 @@ body {
   display: block;
 }
 
+.site_map_close_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .site_map_close_btn img {
   cursor: pointer;
+  margin-right: 28%;
 }
 
 /* site_map 의 상단입니다. */

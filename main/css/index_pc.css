@@ -144,6 +144,21 @@
   width: 100%;
 }
 
+/* 이미지 호버 이벤트입니다 */
+
+.geoje_products_line_1_product_img {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.geoje_products_line_1_product_img img {
+  transition: 1.5s;
+}
+
+.geoje_products_line_1_product_img:hover img {
+  transform: scale(1.1);
+}
+
 .geoje_products_line_1_product_text h1 {
   font-size: 16px;
   font-weight: 400;
@@ -311,7 +326,7 @@
   overflow: hidden;
   position: absolute;
   top: 100%;
-  background-color: #fff;
+  background-color: var(--bgc);
   z-index: 1;
   transition: 0.7s;
 }
@@ -321,7 +336,7 @@
 }
 
 .contact_traffic_description p {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   color: var(--main);
   padding: 70px 50px;
