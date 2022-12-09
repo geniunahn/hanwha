@@ -396,6 +396,7 @@ body {
 
 .sub_menu_option a {
   color: #aaa;
+  transition: 0.5s;
 }
 
 .sub_menu_option a:hover {
