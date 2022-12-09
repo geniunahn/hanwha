@@ -274,3 +274,15 @@
   top: calc(50% - 51px);
   cursor: pointer;
 }
+
+/* 이벤트 화살표 버튼 */
+
+.event_product_info_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.event_product_info_btn svg {
+  cursor: pointer;
+}
