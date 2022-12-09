@@ -35,6 +35,14 @@
       href="./main/css/index_mobile.css"
       media="screen and (max-width:767px)"
     />
+    <!-- AOS API CSS 입니다. -->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+      media="screen and (min-width:767px)"
+    />
+    <!-- AOS API JS 입니다. -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- seo 최적화 및 오픈그래프 입니다. -->
     <meta property="og:image" content="./hanwah_open_img.jpg" />
     <meta property="og:site_name" content="한화호텔&리조트" />
@@ -376,7 +384,13 @@
               <!-- 라인1 입니다 -->
               <li class="geoje_products_line_1">
                 <div class="geoje_products_line_1_product">
-                  <div class="geoje_products_line_1_product_box">
+                  <div
+                    class="geoje_products_line_1_product_box"
+                    data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
                     <div class="geoje_products_line_1_product_img">
                       <img src="./main/images/rooms.jpg" alt="rooms" />
                     </div>
@@ -405,7 +419,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="geoje_products_line_1_product_box">
+                  <div
+                    class="geoje_products_line_1_product_box"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
                     <div class="geoje_products_line_1_product_img">
                       <img src="./main/images/spa.jpg" alt="rooms" />
                     </div>
@@ -433,7 +453,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="geoje_products_line_1_product_box">
+                  <div
+                    class="geoje_products_line_1_product_box"
+                    data-aos="fade-left"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
                     <div class="geoje_products_line_1_product_img">
                       <img src="./main/images/dining.jpg" alt="rooms" />
                     </div>
@@ -468,7 +494,13 @@
               <!-- 라인2 입니다 -->
               <li class="geoje_products_line_2">
                 <div class="geoje_products_line_1_product">
-                  <div class="geoje_products_line_1_product_box">
+                  <div
+                    class="geoje_products_line_1_product_box"
+                    data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
                     <div class="geoje_products_line_1_product_img">
                       <img src="./main/images/PILATES.jpg" alt="rooms" />
                     </div>
@@ -497,7 +529,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="geoje_products_line_2_product_box">
+                  <div
+                    class="geoje_products_line_2_product_box"
+                    data-aos="fade-left"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
                     <div class="geoje_products_line_1_product_img">
                       <img src="./main/images/GOLF.jpg" alt="rooms" />
                     </div>
@@ -532,7 +570,13 @@
               <!-- 라인3 입니다. -->
               <li class="geoje_products_line_3">
                 <div class="geoje_products_line_1_product">
-                  <div class="geoje_products_line_1_product_box">
+                  <div
+                    class="geoje_products_line_1_product_box"
+                    data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
                     <div class="geoje_products_line_1_product_img">
                       <img src="./main/images/FARM_TOUR.jpg" alt="rooms" />
                     </div>
@@ -561,7 +605,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="geoje_products_line_1_product_box">
+                  <div
+                    class="geoje_products_line_1_product_box"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
                     <div class="geoje_products_line_1_product_img">
                       <img
                         src="./main/images/CHILDREN’S_PLAYGROUND.jpg"
@@ -593,7 +643,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="geoje_products_line_1_product_box">
+                  <div
+                    class="geoje_products_line_1_product_box"
+                    data-aos="fade-left"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                  >
                     <div class="geoje_products_line_1_product_img">
                       <img src="./main/images/ARBORETUM.jpg" alt="rooms" />
                     </div>
@@ -822,5 +878,8 @@
         </div>
       </footer>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

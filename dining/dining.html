@@ -35,6 +35,14 @@
       href="./css/dining_mobile.css"
       media="screen and (max-width:767px)"
     />
+    <!-- AOS API CSS 입니다. -->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+      media="screen and (min-width:767px)"
+    />
+    <!-- AOS API JS 입니다. -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- seo 최적화 및 오픈그래프 입니다. -->
     <meta property="og:image" content="../main/images/favicon.ico" />
     <meta property="og:site_name" content="한화호텔&리조트" />
@@ -409,7 +417,13 @@
             <img src="./images/overview_bn.jpg" alt="overview_bn" />
           </div>
           <div class="overview_intro_wrap">
-            <div class="overview_intro_info overview_intro_info_text_down">
+            <div
+              class="overview_intro_info overview_intro_info_text_down"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <div class="overview_intro_info_text">
                 <h1>BUFFET RESTAURANT</h1>
                 <h2>프로방스</h2>
@@ -439,15 +453,33 @@
                 </a>
               </div>
             </div>
-            <div class="overview_intro_bn">
+            <div
+              class="overview_intro_bn"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img src="./images/dining_1.jpg" alt="dining_img" />
             </div>
           </div>
           <div class="overview_intro_wrap overview_intro_wrap_margin">
-            <div class="overview_intro_bn">
+            <div
+              class="overview_intro_bn"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img src="./images/dining_2.jpg" alt="dining_img" />
             </div>
-            <div class="overview_intro_info">
+            <div
+              class="overview_intro_info"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <div class="overview_intro_info_text">
                 <h1>JAPANESE RESTAURANT</h1>
                 <h2>마코토</h2>
@@ -478,7 +510,13 @@
             </div>
           </div>
           <div class="overview_intro_wrap overview_intro_wrap_margin">
-            <div class="overview_intro_info overview_intro_info_text_down">
+            <div
+              class="overview_intro_info overview_intro_info_text_down"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <div class="overview_intro_info_text">
                 <h1>BRUNCH CAFE</h1>
                 <h2>아카시아</h2>
@@ -507,15 +545,33 @@
                 </a>
               </div>
             </div>
-            <div class="overview_intro_bn">
+            <div
+              class="overview_intro_bn"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img src="./images/dining_3.jpg" alt="dining_img" />
             </div>
           </div>
           <div class="overview_intro_wrap overview_intro_wrap_margin">
-            <div class="overview_intro_bn">
+            <div
+              class="overview_intro_bn"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img src="./images/dining_2.jpg" alt="dining_img" />
             </div>
-            <div class="overview_intro_info">
+            <div
+              class="overview_intro_info"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <div class="overview_intro_info_text">
                 <h1>BAR</h1>
                 <h2>클라비스</h2>
@@ -552,12 +608,24 @@
       <div class="event_wrap">
         <div class="width_1600 width_mobile">
           <div class="event_box">
-            <div class="event_title">
+            <div
+              class="event_title"
+              data-aos="fade-down"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <h1>다이닝 이벤트 상품을 만나보세요</h1>
               <h2>EVENT PRODUCTS</h2>
             </div>
             <div class="event_product">
-              <div class="event_product_info">
+              <div
+                class="event_product_info"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
                 <div class="event_product_info_text">
                   <h1>FAMILY DISCOUNT</h1>
                   <h2>
@@ -585,7 +653,13 @@
                   </a>
                 </div>
               </div>
-              <div class="event_product_bn">
+              <div
+                class="event_product_bn"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
                 <img src="./images/event.jpg" alt="event_img" />
               </div>
             </div>
@@ -654,5 +728,8 @@
         </div>
       </footer>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

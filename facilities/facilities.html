@@ -35,6 +35,14 @@
       href="./css/facilities_mobile.css"
       media="screen and (max-width:767px)"
     />
+    <!-- AOS API CSS 입니다. -->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+      media="screen and (min-width:767px)"
+    />
+    <!-- AOS API JS 입니다. -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- seo 최적화 및 오픈그래프 입니다. -->
     <meta property="og:image" content="../hanwah_open_img.jpg" />
     <meta property="og:site_name" content="한화호텔&리조트" />
@@ -406,7 +414,13 @@
           </div>
           <ul class="overview_product_wrap">
             <li class="overview_product_line">
-              <div class="overview_product_box">
+              <div
+                class="overview_product_box"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
                 <div class="overview_product_img">
                   <img src="./images/facilities_1.jpg" alt="" />
                 </div>
@@ -454,7 +468,13 @@
                   </div>
                 </div>
               </div>
-              <div class="overview_product_box">
+              <div
+                class="overview_product_box"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
                 <div class="overview_product_img">
                   <img src="./images/facilities_2.jpg" alt="" />
                 </div>
@@ -506,7 +526,13 @@
           </ul>
           <div class="promotion_wrap">
             <div class="promotion">
-              <div class="promotion_title">
+              <div
+                class="promotion_title"
+                data-aos="zoom-out"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
                 <h1>GOLF COURSE RENEWAL</h1>
                 <p>
                   여름을 맞이해 새롭게 리뉴얼된 골프장을 만나보세요 <br />
@@ -540,7 +566,13 @@
               <div class="promotion_bn">
                 <img src="./images/facilities_4.jpg" alt="golf_promotion" />
               </div>
-              <div class="promotion_title">
+              <div
+                class="promotion_title"
+                data-aos="zoom-out"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
                 <h1>PILATES LESSON</h1>
                 <p>
                   검증된 시험을 통과하고 오랜 강의 경력을 겸비한 강사진이
@@ -569,7 +601,13 @@
               </div>
             </div>
           </div>
-          <div class="overview_product_box_2">
+          <div
+            class="overview_product_box_2"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
             <div class="overview_product_img">
               <img src="./images/facilities_5.jpg" alt="" />
             </div>
@@ -625,12 +663,24 @@
       <div class="event_wrap">
         <div class="width_1600 width_mobile">
           <div class="event_box">
-            <div class="event_title">
+            <div
+              class="event_title"
+              data-aos="fade-down"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <h1>골프 이벤트 상품을 만나보세요</h1>
               <h2>EVENT PRODUCTS</h2>
             </div>
             <div class="event_product">
-              <div class="event_product_info">
+              <div
+                class="event_product_info"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
                 <div class="event_product_info_text">
                   <h1>THE THRONE Of GOLF</h1>
                   <h2>
@@ -659,7 +709,13 @@
                   </a>
                 </div>
               </div>
-              <div class="event_product_bn">
+              <div
+                class="event_product_bn"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
                 <img src="./images/event.jpg" alt="event_img" />
               </div>
             </div>
@@ -728,5 +784,8 @@
         </div>
       </footer>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
