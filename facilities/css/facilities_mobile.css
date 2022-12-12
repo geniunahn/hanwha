@@ -73,6 +73,12 @@
   width: 100%;
 }
 
+#children img {
+  height: 200px;
+  object-fit: cover;
+  object-position: right center;
+}
+
 .overview_product_text h1 {
   font-size: 15px;
   font-weight: 400;
