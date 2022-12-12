@@ -262,6 +262,10 @@
   width: 66.0625%;
 }
 
+.evnet_img {
+  width: 100%;
+}
+
 .event_arrow_left {
   position: absolute;
   right: calc(100% + 50px);
