@@ -1,6 +1,6 @@
 # 한화호텔&리조트 홈페이지 리디자인 프로젝트
 - 제작자 : 안정원
-- 깃허브 url :
+- 깃허브 url : https://github.com/geniunahn/hanwha
 - 프로젝트 url : https://geniunahn.github.io/hanwha/
 - 오리지널 홈페이지 : https://www.hanwharesort.co.kr/irsweb/resort3/index_.do
 - 경쟁사 홈페이지 : http://www.resom.co.kr/resom/main/main.asp
