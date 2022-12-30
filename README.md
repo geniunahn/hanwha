@@ -27,7 +27,7 @@
 ![9](https://user-images.githubusercontent.com/106502672/210042293-a7d46aa3-f658-4af3-8e45-7aeb23ba3c03.jpg)
 ![10](https://user-images.githubusercontent.com/106502672/210042297-8d33c495-bd32-4c1d-8459-af9b1f9a689b.jpg)
 
-# 디자인 및 적용기술 설명
+# 프로젝트 디자인 및 적용기술 설명
 -
 
 # 제작 과정에서의 문제와 극복 과정
