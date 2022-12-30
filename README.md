@@ -14,10 +14,18 @@
 - 한화호텔&리조트는 자사를 소개하는 회사소개 페이지가 없다. 기업의 이미지를 홍보하는 부분에서 단점으로 지적된다. 기업의 역사, 정체성, 비전, 이미지 홍보를 위해서 리뉴얼되는 홈페이지에게 기업을 소개하는 페이지를 추가해야 한다.
 
 # 한화호텔&리조트 사이트의 문제점
+![1](https://user-images.githubusercontent.com/106502672/210042170-47b7eef0-fbe4-48c8-8d64-d6f85a533ba7.jpg)
+![2](https://user-images.githubusercontent.com/106502672/210042185-e0d778dd-1bc7-476e-bdb1-18495baecae9.jpg)
+![3](https://user-images.githubusercontent.com/106502672/210042203-5ccaefc6-b4cf-430f-974f-8935f3791d53.jpg)
+![4](https://user-images.githubusercontent.com/106502672/210042224-ec5b9e2a-94df-4c53-b646-aeb8587b5795.jpg)
+![5](https://user-images.githubusercontent.com/106502672/210042228-21b0ef01-371e-462a-b572-433c62c6881d.jpg)
+![6](https://user-images.githubusercontent.com/106502672/210042233-dba657c9-1270-4adf-84ed-03fed093fe2a.jpg)
 
-<br>
-<br>
-<br>
+# 경쟁사 사이트의 장점 분석
+![7](https://user-images.githubusercontent.com/106502672/210042281-0b8b57c7-9637-4ae4-b00d-6d5bc88c2b65.jpg)
+![8](https://user-images.githubusercontent.com/106502672/210042289-340b4552-29c3-47a3-a929-3843f5ca0d7e.jpg)
+![9](https://user-images.githubusercontent.com/106502672/210042293-a7d46aa3-f658-4af3-8e45-7aeb23ba3c03.jpg)
+![10](https://user-images.githubusercontent.com/106502672/210042297-8d33c495-bd32-4c1d-8459-af9b1f9a689b.jpg)
 
 # 디자인 및 적용기술 설명
 -
