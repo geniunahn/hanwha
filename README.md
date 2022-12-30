@@ -14,7 +14,7 @@
 4. 한화호텔&리조트 회사소개 페이지가 없다. 기업의 이미지를 홍보하는 부분에서 단점으로 지적된다. 기업의 역사, 정체성, 비전, 홍보를 위해서 리디자인 사이트에게 기업을 소개하는 페이지를 추가하도록 한다.
 <br/><br/><br/>
 # 한화호텔&리조트 사이트의 문제점
-![1](https://user-images.githubusercontent.com/106502672/210042170-47b7eef0-fbe4-48c8-8d64-d6f85a533ba7.jpg)
+![1](https://user-images.githubusercontent.com/106502672/210072163-2fde3a6a-2cd6-457b-a26f-7c2504b2d428.jpg)
 ![2](https://user-images.githubusercontent.com/106502672/210042185-e0d778dd-1bc7-476e-bdb1-18495baecae9.jpg)
 ![3](https://user-images.githubusercontent.com/106502672/210042203-5ccaefc6-b4cf-430f-974f-8935f3791d53.jpg)
 ![4](https://user-images.githubusercontent.com/106502672/210042224-ec5b9e2a-94df-4c53-b646-aeb8587b5795.jpg)
