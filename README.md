@@ -28,7 +28,7 @@
 ![10](https://user-images.githubusercontent.com/106502672/210042297-8d33c495-bd32-4c1d-8459-af9b1f9a689b.jpg)
 <br/><br/><br/>
 # 프로젝트 디자인 및 적용기술 설명
-![11](https://user-images.githubusercontent.com/106502672/210052168-625fca87-8d3e-447e-8d5e-f90a90dd1152.jpg)
+![11](https://user-images.githubusercontent.com/106502672/210073217-f7c557eb-f8eb-4f10-94dc-7fecaa586705.jpg)
 ![12](https://user-images.githubusercontent.com/106502672/210051902-342d7a76-96be-4276-9303-37cb87d9171a.jpg)
 ![13](https://user-images.githubusercontent.com/106502672/210051904-cdd1c874-2c21-44c7-83d1-854fa8c682ca.jpg)
 ![13-2](https://user-images.githubusercontent.com/106502672/210051906-37f11e46-7131-4913-80a7-792ae1a29fb6.jpg)
