@@ -28,7 +28,26 @@
 ![10](https://user-images.githubusercontent.com/106502672/210042297-8d33c495-bd32-4c1d-8459-af9b1f9a689b.jpg)
 
 # 프로젝트 디자인 및 적용기술 설명
--
+![11](https://user-images.githubusercontent.com/106502672/210051894-a3b73325-0238-41dc-b3a8-dba794559d51.jpg)
+![12](https://user-images.githubusercontent.com/106502672/210051902-342d7a76-96be-4276-9303-37cb87d9171a.jpg)
+![13](https://user-images.githubusercontent.com/106502672/210051904-cdd1c874-2c21-44c7-83d1-854fa8c682ca.jpg)
+![13-2](https://user-images.githubusercontent.com/106502672/210051906-37f11e46-7131-4913-80a7-792ae1a29fb6.jpg)
+![13-3](https://user-images.githubusercontent.com/106502672/210051907-260b0aea-570f-4cea-b7a9-746dd80b8d14.jpg)
+![14](https://user-images.githubusercontent.com/106502672/210051910-89567c86-e486-4443-a828-407c538f979f.jpg)
+![15](https://user-images.githubusercontent.com/106502672/210051911-0b74a10d-4abf-4542-9652-533f61e1763e.jpg)
+![16](https://user-images.githubusercontent.com/106502672/210051912-d32bd565-dd48-43b1-9232-63087b5866a0.jpg)
+![17](https://user-images.githubusercontent.com/106502672/210051913-542ff707-f537-458a-be25-7c9be4b6f841.jpg)
+![18](https://user-images.githubusercontent.com/106502672/210051915-ea704e73-4c71-444c-8460-1ed7b1b2c08b.jpg)
+![19](https://user-images.githubusercontent.com/106502672/210051916-3acbe932-acc0-487d-8e95-50567ad94696.jpg)
+![20](https://user-images.githubusercontent.com/106502672/210051917-421b115a-c381-413a-8210-c17a9697a569.jpg)
+![21](https://user-images.githubusercontent.com/106502672/210051918-4a851450-5650-4ab4-90e8-88822ccfe7d5.jpg)
+![22](https://user-images.githubusercontent.com/106502672/210051919-92837d88-d7d2-4254-9611-77109a938674.jpg)
+![23](https://user-images.githubusercontent.com/106502672/210051920-d400f0ca-e5bf-4ca0-b4f2-034864abcc36.jpg)
+![24](https://user-images.githubusercontent.com/106502672/210051921-e6c593cb-2352-438c-86f5-8f3882613340.jpg)
+![25](https://user-images.githubusercontent.com/106502672/210051922-c61befe1-524e-478b-a594-c2e9a767e562.jpg)
+![26](https://user-images.githubusercontent.com/106502672/210051927-9f80f573-78bd-4dca-a42e-88eac43567f8.jpg)
+![27](https://user-images.githubusercontent.com/106502672/210051929-00ddc08f-62dd-477b-b2b3-1ca02ce17910.jpg)
+
 
 # 제작 과정에서의 문제와 극복 과정
 -
