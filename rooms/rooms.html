@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../component/component.js"></script>
+    <!-- rooms js -->
+    <script src="./js/rooms.js"></script>
+    <!-- AOS API JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../component/reset.css" />
+    <link
+      rel="stylesheet"
+      href="../component/component_pc.css"
+      media="screen and (min-width:767px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../component/component_mobile.css"
+      media="screen and (max-width:767px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/rooms_pc.css"
+      media="screen and (min-width:767px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/rooms_mobile.css"
+      media="screen and (max-width:767px)"
+    />
+    <!-- AOS API CSS -->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+      media="screen and (min-width:767px)"
+    />
+    <!-- 구글 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- seo 최적화 및 오픈그래프 -->
+    <meta property="og:image" content="../hanwah_open_img.jpg" />
+    <meta property="og:site_name" content="한화호텔&리조트" />
+    <meta property="og:title" content="한화호텔&리조트" />
+    <meta property="og:description" content="한화호텔&리조트 홈페이지입니다." />
+    <meta property="og:type" content="website" />
+    <meta
+      property="keywords"
+      content="한화, 한화호텔&리조트, 한화리조트, 한화호텔"
+    />
+    <meta property="author" content="안정원" />
+    <meta
+      name="description"
+      property="og:description"
+      content="한화호텔&리조트 홈페이지입니다."
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../main/images/favicon.ico" />
+    <title>ROOMS | 한화호텔&리조트</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../main/images/header_logo.png" alt="header_logo" />
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="depth_1">
+            <li>
+              <a href="./rooms.html">ROOMS</a>
+              <div class="depth_2_box">
+                <ul class="depth_2 depth_2_overview">
+                  <li><a href="./rooms.html">OVERVIEW</a></li>
+                </ul>
+                <div class="depth_2_under_box">
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="./rooms.html">STANDARD</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="./rooms.html">DELUXE</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="./rooms.html">EXECUTIVE</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="./rooms.html">PREMIUM</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="./rooms.html">SUITE</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="../spa/spa.html">SPA</a>
+              <div class="depth_2_box">
+                <ul class="depth_2 depth_2_overview">
+                  <li><a href="../spa/spa.html">OVERVIEW</a></li>
+                </ul>
+                <div class="depth_2_under_box">
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../spa/spa.html">SAOUNA</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../spa/spa.html">MASAGE</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../spa/spa.html">INDOOR SWIMMING POOL</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../spa/spa.html">OUTDOOR SWIMMING POOL</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../spa/spa.html">FAMILIY SWIMMING POOL</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="../dining/dining.html">DINING</a>
+              <div class="depth_2_box">
+                <ul class="depth_2 depth_2_overview">
+                  <li><a href="../dining/dining.html">OVERVIEW</a></li>
+                </ul>
+                <div class="depth_2_under_box">
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../dining/dining.html">PROVENCE</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../dining/dining.html">MAKOTO</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../dining/dining.html">ACACIA</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../dining/dining.html">KCLAVIS</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="../facilities/facilities.html">FACILITIES</a>
+              <div class="depth_2_box">
+                <ul class="depth_2 depth_2_overview">
+                  <li><a href="../facilities/facilities.html">OVERVIEW</a></li>
+                </ul>
+                <div class="depth_2_under_box">
+                  <ul class="depth_2 depth2_under">
+                    <li>
+                      <a href="../facilities/facilities.html">FARM TOUR</a>
+                    </li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li>
+                      <a href="../facilities/facilities.html">ARBORETUM</a>
+                    </li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../facilities/facilities.html">GOLF</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li>
+                      <a href="../facilities/facilities.html">PILATES </a>
+                    </li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li>
+                      <a href="../facilities/facilities.html"
+                        >CHILDREN’S PLAYGROUND</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a href="../about/about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+        <div class="utile">
+          <div class="utile_left">
+            <a href="#">
+              <img src="../main/images/language.svg" alt="header_language" />
+            </a>
+            <div class="site_map_btn">
+              <img src="../main/images/site_map.svg" alt="site_map" />
+            </div>
+          </div>
+          <div class="utile_right">
+            <a href="#" id="utile_right_a">RESERVATION</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- site map -->
+      <div class="site_map">
+        <div class="site_map_upper">
+          <h1 class="site_map_logo">
+            <a href="../index.html">
+              <img src="../main/images/header_logo_active.png" alt="logo" />
+            </a>
+          </h1>
+          <div class="site_map_header_ui">
+            <div class="site_map_close_btn">
+              <img
+                src="../main/images/site_map_close_btn.svg"
+                alt="site_close_btn"
+              />
+            </div>
+          </div>
+        </div>
+        <nav class="site_map_nav">
+          <ul class="site_map_dep1_ul">
+            <li class="site_map_dep1_li">
+              <a href="./rooms.html"
+                >ROOMS
+                <ul class="site_map_dep2_ul">
+                  <li class="site_map_dep2_li">
+                    <a href="./rooms.html">OVERVIEW</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="./rooms.html">STANDARD</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="./rooms.html">DELUXE</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="./rooms.html">EXECUTIVE</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="./rooms.html">PREMIUM</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="./rooms.html">SUITE</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="site_map_dep1_li">
+              <a href="../spa/spa.html"
+                >SPA
+                <ul class="site_map_dep2_ul">
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">OVERVIEW</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">SAOUNA</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">MASAGE</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">INDOOR SWIMMING POOL</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">OUTDOOR SWIMMING POOL</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">FAMILIY SWIMMING POOL</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="site_map_dep1_li">
+              <a href="../dining/dining.html"
+                >DINING
+                <ul class="site_map_dep2_ul">
+                  <li class="site_map_dep2_li">
+                    <a href="../dining/dining.html">OVERVIEW</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../dining/dining.html">PROVENCE</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../dining/dining.html">MAKOTO</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../dining/dining.html">ACACIA</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../dining/dining.html">KCLAVIS</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="site_map_dep1_li">
+              <a href="../facilities/facilities.html"
+                >FACILITIES
+                <ul class="site_map_dep2_ul">
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html">OVERVIEW</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html">FARM TOUR</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html">ARBORETUM</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html">GOLF</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html">PILATES</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html"
+                      >CHILDREN’S PLAYGROUND</a
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="site_map_dep1_li">
+              <a href="../about/about.html">ABOUT </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- main bn -->
+      <div class="rooms_bn_box_wrap">
+        <div class="rooms_bn_box">
+          <div class="rooms_bn_title">
+            <h1>ROOMS</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- sub menu -->
+      <div class="width_1600">
+        <div class="sub_menu_box">
+          <a href="../index.html">
+            <span class="sub_menu_home">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.33342 15.8333V11.6666H11.6667V15.8333C11.6667 16.2916 12.0417 16.6666 12.5001 16.6666H15.0001C15.4584 16.6666 15.8334 16.2916 15.8334 15.8333V9.99998H17.2501C17.6334 9.99998 17.8167 9.52498 17.5251 9.27498L10.5584 2.99998C10.2417 2.71664 9.75841 2.71664 9.44175 2.99998L2.47508 9.27498C2.19175 9.52498 2.36675 9.99998 2.75008 9.99998H4.16675V15.8333C4.16675 16.2916 4.54175 16.6666 5.00008 16.6666H7.50008C7.95842 16.6666 8.33342 16.2916 8.33342 15.8333Z"
+                  fill="#AAAAAA"
+                />
+              </svg>
+            </span>
+          </a>
+          <span class="sub_menu_option"
+            >ROOMS
+            <svg
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.5 0.5L5 5L9.5 0.5"
+                stroke="#AAAAAA"
+                stroke-width="1.7"
+              />
+            </svg>
+            <!-- sub menu의 1단계 menu -->
+            <ul class="sub_menu_option_depth">
+              <li><a href="../spa/spa.html">SPA</a></li>
+              <li><a href="../dining/dining.html">DINING</a></li>
+              <li><a href="../facilities/facilities.html">FACILITIES</a></li>
+              <li><a href="../about/about.html">ABOUT</a></li>
+            </ul>
+          </span>
+          <span id="sub_menu_option_main" class="sub_menu_option"
+            >OVERVIEW
+            <svg
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.5 0.5L5 5L9.5 0.5"
+                stroke="#AAAAAA"
+                stroke-width="1.7"
+              />
+            </svg>
+            <!-- sub menu의 2단계 menu -->
+            <ul class="sub_menu_option_depth">
+              <li><a href="./rooms.html">STANDARD</a></li>
+              <li><a href="./rooms.html">DELUXE</a></li>
+              <li><a href="./rooms.html">EXECUTIVE</a></li>
+              <li><a href="./rooms.html">PREMIUM</a></li>
+              <li><a href="./rooms.html">SUITE</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+
+      <!-- overview -->
+      <div class="width_1600 width_mobile">
+        <div class="overview_box">
+          <div class="overview_title">
+            <h1>몸은 편안하게 마음은 풍요롭게</h1>
+            <h2>OVERVIEW</h2>
+            <h3>
+              바다가 한눈에 보이는 전망을 보며 편안하고 여유로운 시간을 보내세요
+            </h3>
+          </div>
+          <div class="overview_bn">
+            <img src="./images/overview_bn.jpg" alt="overview_bn" />
+          </div>
+          <ul class="overview_product_wrap">
+            <li class="overview_product_line">
+              <div
+                class="overview_product_box"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <div class="overview_product_img">
+                  <img src="./images/rooms_1.jpg" alt="" />
+                </div>
+                <div class="overview_product_text">
+                  <h1>STANDARD</h1>
+                  <h2>스탠다드</h2>
+                  <div class="overview_product_text_under">
+                    <h4>
+                      시원하고 상쾌한 느낌을 주는 객실 인테리어와 차분한
+                      분위기의 침실입니다.
+                    </h4>
+                    <a href="#" class="overview_product_text_under_btn"
+                      ><p>VIEW MORE</p>
+                      <svg
+                        width="7"
+                        height="11"
+                        viewBox="0 0 7 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="overview_product_text_second">
+                  <div class="overview_product_text_second_line">
+                    <div class="overview_product_text_second_line_text">
+                      <h1>침대타입</h1>
+                      <p>싱글/더블</p>
+                    </div>
+                    <div class="overview_product_text_second_line_text">
+                      <h1>객실면적</h1>
+                      <p>44㎡</p>
+                    </div>
+                  </div>
+                  <div class="overview_product_text_second_line">
+                    <div class="overview_product_text_second_line_text">
+                      <h1>투숙인원</h1>
+                      <p>4~8명</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="overview_product_box"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <div class="overview_product_img">
+                  <img src="./images/rooms_2.jpg" alt="" />
+                </div>
+                <div class="overview_product_text">
+                  <h1>DELUXE</h1>
+                  <h2>디럭스</h2>
+                  <div class="overview_product_text_under">
+                    <h4>
+                      아름다운 오션뷰를 즐기실 수 있도록 객실을 구성했습니다.
+                    </h4>
+                    <a href="#" class="overview_product_text_under_btn"
+                      ><p>VIEW MORE</p>
+                      <svg
+                        width="7"
+                        height="11"
+                        viewBox="0 0 7 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="overview_product_text_second">
+                  <div class="overview_product_text_second_line">
+                    <div class="overview_product_text_second_line_text">
+                      <h1>침대타입</h1>
+                      <p>싱글/더블</p>
+                    </div>
+                    <div class="overview_product_text_second_line_text">
+                      <h1>객실면적</h1>
+                      <p>47㎡</p>
+                    </div>
+                  </div>
+                  <div class="overview_product_text_second_line">
+                    <div class="overview_product_text_second_line_text">
+                      <h1>투숙인원</h1>
+                      <p>4~8명</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="overview_product_box"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <div class="overview_product_img">
+                  <img src="./images/rooms_3.jpg" alt="" />
+                </div>
+                <div class="overview_product_text">
+                  <h1>EXECUTIVE</h1>
+                  <h2>이그젝큐티브</h2>
+                  <div class="overview_product_text_under">
+                    <h4>
+                      넓은 테라스에서 즐기는 아름다운 전망과 신선한 자연의
+                      바람을 즐겨보세요.
+                    </h4>
+                    <a href="#" class="overview_product_text_under_btn"
+                      ><p>VIEW MORE</p>
+                      <svg
+                        width="7"
+                        height="11"
+                        viewBox="0 0 7 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="overview_product_text_second">
+                  <div class="overview_product_text_second_line">
+                    <div class="overview_product_text_second_line_text">
+                      <h1>침대타입</h1>
+                      <p>싱글/더블</p>
+                    </div>
+                    <div class="overview_product_text_second_line_text">
+                      <h1>객실면적</h1>
+                      <p>50㎡</p>
+                    </div>
+                  </div>
+                  <div class="overview_product_text_second_line">
+                    <div class="overview_product_text_second_line_text">
+                      <h1>투숙인원</h1>
+                      <p>4~8명</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="overview_product_line">
+              <div
+                class="overview_product_box_2"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <div class="overview_product_img">
+                  <img src="./images/rooms_4.jpg" alt="" />
+                </div>
+                <div class="overview_product_text">
+                  <h1>PREMIUM</h1>
+                  <h2>프리미엄</h2>
+                  <div class="overview_product_text_under">
+                    <h4>
+                      프리미엄 인테리어 디자인과 넓은 면적으로 많은 인원이
+                      편안히 머무를 수 있는 객실입니다.
+                    </h4>
+                    <a href="#" class="overview_product_text_under_btn"
+                      ><p>VIEW MORE</p>
+                      <svg
+                        width="7"
+                        height="11"
+                        viewBox="0 0 7 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="overview_product_text_second">
+                  <div class="overview_product_text_second_line">
+                    <div class="overview_product_text_second_line_text">
+                      <h1>침대타입</h1>
+                      <p>싱글/더블</p>
+                    </div>
+                    <div class="overview_product_text_second_line_text">
+                      <h1>객실면적</h1>
+                      <p>52㎡</p>
+                    </div>
+                  </div>
+                  <div class="overview_product_text_second_line">
+                    <div class="overview_product_text_second_line_text">
+                      <h1>투숙인원</h1>
+                      <p>4~8명</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="overview_product_box_2"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <div class="overview_product_img">
+                  <img src="./images/rooms_5.jpg" alt="" />
+                </div>
+                <div class="overview_product_text">
+                  <h1>SUITE</h1>
+                  <h2>스위트</h2>
+                  <div class="overview_product_text_under">
+                    <h4>
+                      객실에서 즐기는 거제의 아름다운 바다 전망은 더욱 특별한
+                      여행으로 만들어드립니다.
+                    </h4>
+                    <a href="#" class="overview_product_text_under_btn"
+                      ><p>VIEW MORE</p>
+                      <svg
+                        width="7"
+                        height="11"
+                        viewBox="0 0 7 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M1 0.5L6 5.5L1 10.5" stroke="#666A74" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="overview_product_text_second">
+                  <div class="overview_product_text_second_line">
+                    <div class="overview_product_text_second_line_text">
+                      <h1>침대타입</h1>
+                      <p>싱글/더블</p>
+                    </div>
+                    <div class="overview_product_text_second_line_text">
+                      <h1>객실면적</h1>
+                      <p>60㎡</p>
+                    </div>
+                  </div>
+                  <div class="overview_product_text_second_line">
+                    <div class="overview_product_text_second_line_text">
+                      <h1>투숙인원</h1>
+                      <p>4~8명</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- event -->
+      <div class="event_wrap">
+        <div class="width_1600 width_mobile">
+          <div class="event_box">
+            <div
+              class="event_title"
+              data-aos="fade-down"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <h1>객실 이벤트 상품을 만나보세요</h1>
+              <h2>EVENT PRODUCTS</h2>
+            </div>
+            <div class="event_product">
+              <div
+                class="event_product_info"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <div class="event_product_info_text">
+                  <h1>THE ROMANTIC SUMMER</h1>
+                  <h2>
+                    객실 + 데일리 생화 꽃다발 + 호텔 시그니처 와인 + 리조트
+                    상품권 5만원
+                  </h2>
+                  <h3>예약 : 2022.08.10 ~ 22.09.10</h3>
+                  <h4>투숙 : 2022.08.15 ~ 22.09.31</h4>
+                </div>
+                <div class="event_product_info_btn">
+                  <a href="#">
+                    <p>VIEW MORE</p>
+                    <svg
+                      width="15"
+                      height="20"
+                      viewBox="0 0 9 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L7 7.5L1 13.5"
+                        stroke="black"
+                        stroke-width="1"
+                      />
+                    </svg>
+                  </a>
+                  <!-- 이벤트의 화살표 버튼 -->
+                  <div class="event_product_info_btn_arrow">
+                    <svg
+                      class="event_product_info_btn_arrow_left"
+                      width="47"
+                      height="47"
+                      viewBox="0 0 47 47"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M34 8L13 24L34 40" stroke="black" />
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="46"
+                        height="46"
+                        stroke="black"
+                      />
+                    </svg>
+                    <svg
+                      class="event_product_info_btn_arrow_right"
+                      width="47"
+                      height="47"
+                      viewBox="0 0 47 47"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M13 8L34 24L13 40" stroke="black" />
+                      <rect
+                        x="-0.5"
+                        y="0.5"
+                        width="46"
+                        height="46"
+                        transform="matrix(-1 0 0 1 46 0)"
+                        stroke="black"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="event_product_bn"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <img
+                  class="evnet_img"
+                  src="./images/event.jpg"
+                  alt="event_img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer_left">
+          <h1 class="footer_left_logo">
+            <a href="../index.html">
+              <img src="../main/images/footer_logo.jpg" alt="footer_logo" />
+            </a>
+          </h1>
+          <div class="footer_left_info">
+            <p class="footer_left_info_1">
+              경남 거제시 장목면 거제북로 2501-40
+            </p>
+            <p class="footer_left_info_2">
+              <span>Tel.1588-2299 | </span>
+              <span>Fax 02-789-5525</span>
+            </p>
+            <p class="footer_left_info_3">
+              Copyright@ Hanwha Hotels & Resorts. All Rights Reserved.
+            </p>
+            <p class="footer_left_info_4">
+              <span>사업자등록번호 : 101-81-30747 | </span>
+              <span>대표이사 : 김형조 | </span>
+              <span>통신판매업 신고번호 : 2015-서울영등포-0907</span>
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="footer_right_upper">
+            <span>
+              <a
+                href="https://hlive.hanwharesort.co.kr/utils/policy.do?_gl=1*12jrqw8*_ga*MTAwNDUyMDk5LjE2Njk2MDIzNzE.*_ga_7EZ65XE45B*MTY3MDU1OTIxNS4xNC4xLjE2NzA1NjA3NTAuNTcuMC4w"
+                >개인정보처리방침</a
+              ></span
+            >
+            <span class="footer_right_upper_2"
+              ><a
+                href="https://hlive.hanwharesort.co.kr/utils/nomail.do?_gl=1*12jrqw8*_ga*MTAwNDUyMDk5LjE2Njk2MDIzNzE.*_ga_7EZ65XE45B*MTY3MDU1OTIxNS4xNC4xLjE2NzA1NjA3NTAuNTcuMC4w"
+                >이메일 무단 수집거부</a
+              ></span
+            >
+            <!-- footer family site -->
+            <div class="footer_right_upper_family">
+              <span class="family_box">패밀리사이트 </span>
+              <svg
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1 1L7 7L13 1" stroke="#444444" />
+              </svg>
+              <ul class="family_depth1">
+                <li>
+                  <a href="https://www.hanwha.co.kr/index.do">한화그룹</a>
+                </li>
+                <li>
+                  <a href="https://hlive.hanwharesort.co.kr/index.do"
+                    >멤버십사이트</a
+                  >
+                </li>
+                <li><a href="https://www.lmembers.co.kr/pc/">LEMBERS</a></li>
+                <li>
+                  <a href="https://www.plazacc.co.kr/plzcc/irsweb/golf2/main.do"
+                    >플라자CC</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_right_under">
+            <a href="https://www.instagram.com/hanwharesort_story/"
+              ><img src="../main/images/instagram.svg" alt="instagram"
+            /></a>
+            <a href="https://www.youtube.com/channel/UCPQPQLc6sbZgMBrL4EqwJWA"
+              ><img src="../main/images/youtube.svg" alt="youtube"
+            /></a>
+            <a href="https://www.facebook.com/hanwhahotelandresort"
+              ><img src="../main/images/facebook.svg" alt="facebook"
+            /></a>
+            <a href="https://blog.naver.com/hanwha_resort"
+              ><img src="../main/images/naver.svg" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
