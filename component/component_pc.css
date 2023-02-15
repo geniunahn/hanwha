@@ -12,8 +12,6 @@ body {
 .width_1600 {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 20px;
-  overflow: hidden;
 }
 
 /* pc의 헤더입니다 */
@@ -132,11 +130,6 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 25px;
-}
-
-.site_map_btn img {
-  width: 100%;
 }
 
 .utile_left a {
@@ -144,11 +137,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 20px;
-  width: 22px;
-}
-
-.utile_left a img {
-  width: 100%;
 }
 
 .utile_left p {
