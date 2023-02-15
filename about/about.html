@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../component/component.js"></script>
+    <!-- about js -->
+    <script src="./js/about.js"></script>
+    <!-- AOS API JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../component/reset.css" />
+    <link
+      rel="stylesheet"
+      href="../component/component_pc.css"
+      media="screen and (min-width:767px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../component/component_mobile.css"
+      media="screen and (max-width:767px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/about_pc.css"
+      media="screen and (min-width:767px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/about_mobile.css"
+      media="screen and (max-width:767px)"
+    />
+    <!-- AOS API CSS -->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+      media="screen and (min-width:767px)"
+    />
+    <!-- 구글 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- seo 최적화 및 오픈그래프 -->
+    <meta property="og:image" content="../hanwah_open_img.jpg" />
+    <meta property="og:site_name" content="한화호텔&리조트" />
+    <meta property="og:title" content="한화호텔&리조트" />
+    <meta property="og:description" content="한화호텔&리조트 홈페이지입니다." />
+    <meta property="og:type" content="website" />
+    <meta
+      property="keywords"
+      content="한화, 한화호텔&리조트, 한화리조트, 한화호텔"
+    />
+    <meta property="author" content="안정원" />
+    <meta
+      name="description"
+      property="og:description"
+      content="한화호텔&리조트 홈페이지입니다."
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../main/images/favicon.ico" />
+
+    <title>ABOUT | 한화호텔&리조트</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../main/images/header_logo.png" alt="header_logo" />
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="depth_1">
+            <li>
+              <a href="../rooms/rooms.html">ROOMS</a>
+              <div class="depth_2_box">
+                <ul class="depth_2 depth_2_overview">
+                  <li><a href="../rooms/rooms.html">OVERVIEW</a></li>
+                </ul>
+                <div class="depth_2_under_box">
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../rooms/rooms.html">STANDARD</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../rooms/rooms.html">DELUXE</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../rooms/rooms.html">EXECUTIVE</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../rooms/rooms.html">PREMIUM</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../rooms/rooms.html">SUITE</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="../spa/spa.html">SPA</a>
+              <div class="depth_2_box">
+                <ul class="depth_2 depth_2_overview">
+                  <li><a href="../spa/spa.html">OVERVIEW</a></li>
+                </ul>
+                <div class="depth_2_under_box">
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../spa/spa.html">SAOUNA</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../spa/spa.html">MASAGE</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../spa/spa.html">INDOOR SWIMMING POOL</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../spa/spa.html">OUTDOOR SWIMMING POOL</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../spa/spa.html">FAMILIY SWIMMING POOL</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="../dining/dining.html">DINING</a>
+              <div class="depth_2_box">
+                <ul class="depth_2 depth_2_overview">
+                  <li><a href="../dining/dining.html">OVERVIEW</a></li>
+                </ul>
+                <div class="depth_2_under_box">
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../dining/dining.html">PROVENCE</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../dining/dining.html">MAKOTO</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../dining/dining.html">ACACIA</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../dining/dining.html">KCLAVIS</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="../facilities/facilities.html">FACILITIES</a>
+              <div class="depth_2_box">
+                <ul class="depth_2 depth_2_overview">
+                  <li><a href="../facilities/facilities.html">OVERVIEW</a></li>
+                </ul>
+                <div class="depth_2_under_box">
+                  <ul class="depth_2 depth2_under">
+                    <li>
+                      <a href="../facilities/facilities.html">FARM TOUR</a>
+                    </li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li>
+                      <a href="../facilities/facilities.html">ARBORETUM</a>
+                    </li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li><a href="../facilities/facilities.html">GOLF</a></li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li>
+                      <a href="../facilities/facilities.html">PILATES </a>
+                    </li>
+                  </ul>
+                  <ul class="depth_2 depth2_under">
+                    <li>
+                      <a href="../facilities/facilities.html"
+                        >CHILDREN’S PLAYGROUND</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a href="./about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+        <div class="utile">
+          <div class="utile_left">
+            <a href="#">
+              <img src="../main/images/language.svg" alt="header_language" />
+            </a>
+            <div class="site_map_btn">
+              <img src="../main/images/site_map.svg" alt="site_map" />
+            </div>
+          </div>
+          <div class="utile_right">
+            <a href="#" id="utile_right_a">RESERVATION</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- site map -->
+      <div class="site_map">
+        <div class="site_map_upper">
+          <h1 class="site_map_logo">
+            <a href="#">
+              <img src="../main/images/header_logo_active.png" alt="logo" />
+            </a>
+          </h1>
+          <div class="site_map_header_ui">
+            <div class="site_map_close_btn">
+              <img
+                src="../main/images/site_map_close_btn.svg"
+                alt="site_close_btn"
+              />
+            </div>
+          </div>
+        </div>
+        <nav class="site_map_nav">
+          <ul class="site_map_dep1_ul">
+            <li class="site_map_dep1_li">
+              <a href="../rooms/rooms.html"
+                >ROOMS
+                <ul class="site_map_dep2_ul">
+                  <li class="site_map_dep2_li">
+                    <a href="../rooms/rooms.html">OVERVIEW</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../rooms/rooms.html">STANDARD</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../rooms/rooms.html">DELUXE</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../rooms/rooms.html">EXECUTIVE</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../rooms/rooms.html">PREMIUM</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../rooms/rooms.html">SUITE</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="site_map_dep1_li">
+              <a href="../spa/spa.html"
+                >SPA
+                <ul class="site_map_dep2_ul">
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">OVERVIEW</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">SAOUNA</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">MASAGE</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">INDOOR SWIMMING POOL</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">OUTDOOR SWIMMING POOL</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../spa/spa.html">FAMILIY SWIMMING POOL</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="site_map_dep1_li">
+              <a href="../dining/dining.html"
+                >DINING
+                <ul class="site_map_dep2_ul">
+                  <li class="site_map_dep2_li">
+                    <a href="../dining/dining.html">OVERVIEW</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../dining/dining.html">PROVENCE</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../dining/dining.html">MAKOTO</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../dining/dining.html">ACACIA</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../dining/dining.html">KCLAVIS</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="site_map_dep1_li">
+              <a href="../facilities/facilities.html"
+                >FACILITIES
+                <ul class="site_map_dep2_ul">
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html">OVERVIEW</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html">FARM TOUR</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html">ARBORETUM</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html">GOLF</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html">PILATES</a>
+                  </li>
+                  <li class="site_map_dep2_li">
+                    <a href="../facilities/facilities.html"
+                      >CHILDREN’S PLAYGROUND</a
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="site_map_dep1_li">
+              <a href="./about.html">ABOUT </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- main bn -->
+      <div class="about_bn_box_wrap">
+        <div class="about_bn_box">
+          <div class="about_bn_title">
+            <h1>ABOUT</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- sub menu -->
+      <div class="width_1600">
+        <div class="sub_menu_box">
+          <a href="../index.html">
+            <span class="sub_menu_home">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.33342 15.8333V11.6666H11.6667V15.8333C11.6667 16.2916 12.0417 16.6666 12.5001 16.6666H15.0001C15.4584 16.6666 15.8334 16.2916 15.8334 15.8333V9.99998H17.2501C17.6334 9.99998 17.8167 9.52498 17.5251 9.27498L10.5584 2.99998C10.2417 2.71664 9.75841 2.71664 9.44175 2.99998L2.47508 9.27498C2.19175 9.52498 2.36675 9.99998 2.75008 9.99998H4.16675V15.8333C4.16675 16.2916 4.54175 16.6666 5.00008 16.6666H7.50008C7.95842 16.6666 8.33342 16.2916 8.33342 15.8333Z"
+                  fill="#AAAAAA"
+                />
+              </svg>
+            </span>
+          </a>
+          <span id="sub_menu_option_main" class="sub_menu_option"
+            >ABOUT
+            <svg
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.5 0.5L5 5L9.5 0.5"
+                stroke="#AAAAAA"
+                stroke-width="1.7"
+              />
+            </svg>
+            <!-- sub menu의 1단계 menu -->
+            <ul class="sub_menu_option_depth">
+              <li><a href="../rooms/rooms.html">ROOMS</a></li>
+              <li><a href="../spa/spa.html">SPA</a></li>
+              <li><a href="../dining/dining.html">DINING</a></li>
+              <li><a href="../facilities/facilities.html">FACILITIES</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+
+      <!-- overview -->
+      <div class="width_1600 width_mobile">
+        <div class="overview_box">
+          <div class="overview_title">
+            <h1>한화호텔&리조트를 찾아주셔서 감사합니다</h1>
+            <h2>OVERVIEW</h2>
+            <h3>
+              한화호텔&리조트는 리조트, 호텔, 외식사업 분야에서 업계를 선도하는
+              국내 최고의 종합 레저 서비스 기업입니다
+            </h3>
+          </div>
+          <div class="overview_bn">
+            <img src="./images/overview_bn.jpg" alt="overview_bn" />
+          </div>
+          <div class="overview_intro">
+            <div
+              class="overview_intro_title"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <h1>한화호텔&리조트 소개</h1>
+            </div>
+            <div
+              class="overview_intro_info"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <p>
+                한화호텔&리조트는1979년 국내 최초 콘도미니엄 건설을 통하여
+                서비스∙레저사업에 첫발을 디딘 이래 현재 전국에서 가장 많은 직영
+                콘도 체인 및 골프장을운영하고 있으며, 다양한 범주의 F&B서비스를
+                고객에게 제공하고 있습니다. 향후에도 한화호텔&리조트는 21세기
+                건전한 생활∙레저 문화 창조를 위해미래지향적인 가치관과 그간의
+                레저사업 운영 노하우를 기반으로 지속적인사업영역의 확대를
+                추진하여 질적, 양적 측면에서 명실상부한 국내
+                최고의국민레저기업으로서의 입지를 다지고자 합니다.
+              </p>
+              <p>
+                고객의 사랑에 보답하기 위해서 최고의 서비스 가치를 선사한다는
+                것이 한화 호텔&리조트의 비전입니다. 고객과 사회와의 신뢰를
+                바탕으로 국내 서비스 레저 업계를 선도해 갈 수 있도록 항상
+                도전하고 변화하는 기업문화를 정착시켜 나가겠습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 핵심가치 -->
+      <div class="width_1600 width_mobile">
+        <div class="core_box">
+          <div class="core_title">
+            <h1>한화인을 움직이는 원칙과 힘</h1>
+            <h2>CORE VALUE</h2>
+            <h3>한화호텔&리조트가 지향하는 핵심가치를 소개합니다</h3>
+          </div>
+          <ul class="core_intro">
+            <li
+              class="core_intro_box"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="core_intro_img">
+                <img src="./images/CORE_1.jpg" alt="core_img" />
+              </div>
+              <div class="core_intro_text">
+                <h1>CUSTOMER FIRST PHILOSOPHY</h1>
+                <h2>고객 중심 경영</h2>
+                <h3>
+                  고객의 편안함과 즐거움을 최우선으로 삼는 원칙으로 최고의
+                  서비스 선사하는 것이 한화호텔&리조트의 철학입니다.
+                </h3>
+              </div>
+            </li>
+            <li
+              class="core_intro_box"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="core_intro_img">
+                <img src="./images/CORE_2.jpg" alt="core_img" />
+              </div>
+              <div class="core_intro_text">
+                <h1>TRUST AND COOPERATION</h1>
+                <h2>신뢰와 협동</h2>
+                <h3>
+                  신뢰를 바탕으로 협동하는 기업문화를 통해 한화호텔&리조트는
+                  고객과 사원 모두가 만족하는 미래를 만들어 갑니다
+                </h3>
+              </div>
+            </li>
+            <li
+              class="core_intro_box"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="core_intro_img">
+                <img src="./images/CORE_3.jpg" alt="core_img" />
+              </div>
+              <div class="core_intro_text">
+                <h1>DEVELOPMENT AND INNOVATION</h1>
+                <h2>발전과 혁신</h2>
+                <h3>
+                  고객님께 더 나은 서비스를 드리기 위해 우리는 혁신과 도전을
+                  멈추지 않습니다.
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 사업영역 -->
+      <div class="width_1600 width_mobile">
+        <div class="business_box">
+          <div class="business_title">
+            <h1>멈추지 않는 도전과 성장</h1>
+            <h2>BUSINESS</h2>
+            <h3>한화호텔&리조트의 사업영역을 소개합니다</h3>
+          </div>
+          <div
+            class="business_img"
+            data-aos="zoom-out"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <img src="./images/business.jpg" alt="business_img" />
+          </div>
+          <div class="business_intro_box">
+            <div class="business_intro">
+              <div
+                class="business_intro_title"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <h1>호텔</h1>
+              </div>
+              <div
+                class="business_intro_info"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <p>
+                  한화호텔&리조트는 리조트, 호텔, 골프장, 테마파크, 관람시설,
+                  식음사업 등 국내 최고 프리미엄 종합 레저/서비스 사업을 제공해
+                  드리고 있습니다. 서울의 중심에 위치한 더 플라자는 서울의
+                  상징인 시청 맞은편에 자리잡아 비즈니스맨 및 관광객에게 최적의
+                  위치 조건을 자랑합니다. 총 410개 객실과 6개의 다양한
+                  레스토랑&바, 9개의 연회장, 휘트니스 및 스파 등을 갖추고 있는
+                  더 플라자는 서울 시내에서 가장 현대적인 특급호텔 중
+                  하나입니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="business_intro_box">
+            <div class="business_intro">
+              <div
+                class="business_intro_info business_intro_info_order"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <p>
+                  12개 직영 리조트와 4,800실 이상의 객실을 갖춘 국내 최대 규모의
+                  콘도미니엄 체인을 보유하고 있으며, 리모델링을 통해 객실과
+                  부대시설을 높은 수준으로 강화해 보다 안락한 휴식 공간과
+                  서비스를 제공하고 있습니다. 한화호텔&리조트는 국내 최고의
+                  리조트로서의 입지를 확고히 하기 위하여 오랜 시간으로 노후화된
+                  기존 시설의 리모델링을 지속적으로 진행하고 있습니다.
+                </p>
+              </div>
+              <div
+                class="business_intro_title"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <h1>리조트</h1>
+              </div>
+            </div>
+          </div>
+          <div class="business_intro_box">
+            <div class="business_intro">
+              <div
+                class="business_intro_title"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <h1>다이닝&컨세이션</h1>
+              </div>
+              <div
+                class="business_intro_info"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <p>
+                  컨세션 사업 Concession컨세션은 대형 쇼핑몰, 교통시설, 휴게소
+                  등 다중 복합시설과 문화시설, 골프장 같은 레저시설 내 식음
+                  사업권을 위탁받아 운영하는 사업입니다. 해당 입지에 맞는 공간
+                  디자인과 트렌드 메뉴를 기반으로 식음 서비스의 만족도와
+                  시설물의 가치를 동반 상승시켜주는 상생 비즈니스입니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="business_intro_box">
+            <div class="business_intro">
+              <div
+                class="business_intro_info business_intro_info_order"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <p>
+                  1984년 플라자CC 설악 개장 이후 국내 최다 골프클럽을 보유하고
+                  있는 한화호텔&리조트 골프 클럽은 각각의 특성을 보유한 완벽한
+                  코스, 산과 바다가 어우러진 천혜의 자연환경, 최고의 시설과
+                  서비스를 보유하고 있습니다. 설악과 용인, 일본 나가사키 등
+                  72홀의 회원제 골프장과 제주에 9홀 퍼블릭 골프장을 운영하고
+                  있습니다.플라자CC 설악은 전통과 역사가 살아있는 골프장으로
+                  1984년 개장 이후 고객들로부터 변함없는 사랑을 받고 있습니다.
+                  설악산의 사계절과 굽이굽이 솟은 울산바위, 비취 빛 푸른
+                  동해까지. 자연이 만들어 낸 감동을 느끼며 라운드를 즐길 수
+                  있습니다.
+                </p>
+              </div>
+              <div
+                class="business_intro_title"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <h1>골프</h1>
+              </div>
+            </div>
+          </div>
+          <div class="business_intro_box">
+            <div class="business_intro">
+              <div
+                class="business_intro_title"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <h1>레저&문화시설</h1>
+              </div>
+              <div
+                class="business_intro_info"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <p>
+                  한화호텔&리조트는 '풍요로운 삶에 행복을 더해주는 생활 문화
+                  에너지 창출'이라는 미션 아래, 프리미엄 종합 레저·서비스
+                  기업으로 도약하기 위해 레저&컬쳐 사업 분야를 지속적으로
+                  개척하고 있습니다.한화호텔&리조트의 대표 워터 테마파크인 설악
+                  워터피아는 2011년 대대적인 리모델링을 통해 짜릿한 물놀이
+                  시설부터 설악산의 수려한 경치를 배경으로 몸과 마음을 치유할 수
+                  있는 노천 스파 시설까지 모두 즐길 수 있는 물놀이 천국으로
+                  재탄생 하였습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer_left">
+          <h1 class="footer_left_logo">
+            <a href="../index.html">
+              <img src="../main/images/footer_logo.jpg" alt="footer_logo" />
+            </a>
+          </h1>
+          <div class="footer_left_info">
+            <p class="footer_left_info_1">
+              경남 거제시 장목면 거제북로 2501-40
+            </p>
+            <p class="footer_left_info_2">
+              <span>Tel.1588-2299 | </span>
+              <span>Fax 02-789-5525</span>
+            </p>
+            <p class="footer_left_info_3">
+              Copyright@ Hanwha Hotels & Resorts. All Rights Reserved.
+            </p>
+            <p class="footer_left_info_4">
+              <span>사업자등록번호 : 101-81-30747 | </span>
+              <span>대표이사 : 김형조 | </span>
+              <span>통신판매업 신고번호 : 2015-서울영등포-0907</span>
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="footer_right_upper">
+            <span>
+              <a
+                href="https://hlive.hanwharesort.co.kr/utils/policy.do?_gl=1*12jrqw8*_ga*MTAwNDUyMDk5LjE2Njk2MDIzNzE.*_ga_7EZ65XE45B*MTY3MDU1OTIxNS4xNC4xLjE2NzA1NjA3NTAuNTcuMC4w"
+                >개인정보처리방침</a
+              ></span
+            >
+            <span class="footer_right_upper_2"
+              ><a
+                href="https://hlive.hanwharesort.co.kr/utils/nomail.do?_gl=1*12jrqw8*_ga*MTAwNDUyMDk5LjE2Njk2MDIzNzE.*_ga_7EZ65XE45B*MTY3MDU1OTIxNS4xNC4xLjE2NzA1NjA3NTAuNTcuMC4w"
+                >이메일 무단 수집거부</a
+              ></span
+            >
+            <!-- footer family site -->
+            <div class="footer_right_upper_family">
+              <span class="family_box">패밀리사이트 </span>
+              <svg
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1 1L7 7L13 1" stroke="#444444" />
+              </svg>
+              <ul class="family_depth1">
+                <li>
+                  <a href="https://www.hanwha.co.kr/index.do">한화그룹</a>
+                </li>
+                <li>
+                  <a href="https://hlive.hanwharesort.co.kr/index.do"
+                    >멤버십사이트</a
+                  >
+                </li>
+                <li><a href="https://www.lmembers.co.kr/pc/">LEMBERS</a></li>
+                <li>
+                  <a href="https://www.plazacc.co.kr/plzcc/irsweb/golf2/main.do"
+                    >플라자CC</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_right_under">
+            <a href="https://www.instagram.com/hanwharesort_story/"
+              ><img src="../main/images/instagram.svg" alt="instagram"
+            /></a>
+            <a href="https://www.youtube.com/channel/UCPQPQLc6sbZgMBrL4EqwJWA"
+              ><img src="../main/images/youtube.svg" alt="youtube"
+            /></a>
+            <a href="https://www.facebook.com/hanwhahotelandresort"
+              ><img src="../main/images/facebook.svg" alt="facebook"
+            /></a>
+            <a href="https://blog.naver.com/hanwha_resort"
+              ><img src="../main/images/naver.svg" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
